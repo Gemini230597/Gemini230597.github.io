@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./normalize.css" rel="stylesheet" />
     <link href="./style.css" rel="stylesheet" />
-    <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AIdro_kXDqGFvZ7HmIN76e7StXSv04H_Bv4BJT9o-WQb=s900-c-k-c0x00ffffff-no-rj" type="image/x-icon">
-    <title>Document</title>
+    <link rel="icon" href="https://yt3.googleusercontent.com/ytc/AIdro_kXDqGFvZ7HmIN76e7StXSv04H_Bv4BJT9o-WQb=s900-c-k-c0x00ffffff-no-rj" type="image/x-icon" />
+    <title>Павел Колесников</title>
   </head>
   <body>
     <header class="header">
@@ -17,64 +17,84 @@
       <p class="header__title">QA Engineer</p>
     </header>
     <main>
+      <!-- Вкладка "Доступен" -->
       <section class="links">
         <h2 class="links__header">Доступен</h2>
         <ul class="links__container">
           <li class="links__link">
-            <img src="icons8-телеграм-24.png" alt="avatar" height="20px" />
+            <img src="icons8-телеграм-24.png" alt="telegram icon" height="20px" />
             <p class="links__title">Телеграм</p>
-            <a class="linsk__link" href="https://t.me/Gemini230597">@Gemini230597</a>
+            <a class="links__link-text" href="https://t.me/Gemini230597">@Gemini230597</a>
           </li>
           <li class="links__link">
-            <img src="icons8-почта-48.png" alt="avatar" height="20px" />
+            <img src="icons8-почта-48.png" alt="mail icon" height="20px" />
             <p class="links__title">Эл. почта</p>
-            <a class="linsk__link" href="mailto:pash230597@mail.ru"
-              >pash230597@mail.ru</a
-            >
+            <a class="links__link-text" href="mailto:pash230597@mail.ru">pash230597@mail.ru</a>
           </li>
           <li class="links__link">
-            <img src="icons8-github-48.png" alt="avatar" height="20px" />
+            <img src="icons8-github-48.png" alt="github icon" height="20px" />
             <p class="links__title">Git</p>
-            <a class="linsk__link" href="https://github.com/Gemini230597/">github.com/Gemini230597</a>
+            <a class="links__link-text" href="https://github.com/Gemini230597/">github.com/Gemini230597</a>
           </li>
         </ul>
       </section>
-      <section class="links">
-        <h2 class="links__header">Ключевые навыки:</h2>
-        <ul class="links__container">
-          <li class="links__link">
-            <p class="links__title">Процессы</p>
-            <p class="links__title">Тасктрекеры: Яндекс.Трекер, Jira, Битрикс24</p>
-            <p class="links__title">TMS: Чек-листы и тест-кейсы составляю в Testit</p>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Web</p>
-            <p class="links__title">Умею работать с Devtools</p>
-            <p class="links__title">Дизайн сверяю в Figma</p>
-            <p class="links__title">Проводил Кросс-браузерное тестирование</p>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Бэкенд</p>
-            <p class="links__title">Postman (коллекции, переменные, cUrl)</p>
-            <p class="links__title">СSQL (Select, Join, Group by)</p>
-            <p class="links__title">HTTP и клиент-серверная архитектура</p>
-            <p class="links__title">Kibana, Sentry, Grafana</p>
-            <p class="links__title">Опыт работы с Linux</p>
-            <p class="links__title">Работаю с Git через консоль и десктопное приложение</p>
-            <p class="links__title">Брокер сообщений Kafka</p>
-            <p class="links__title">Swagger и Redoc</p>
-          </li>
-          <li class="links__link">
-            <p class="links__title">Мобилки</p>
-            <p class="links__title">Работал с Charles (breakpoint, map local, rewrite)</p>
-            <p class="links__title">Запускал .apk на тестовом устройстве и в Android Studio (Adb и logcat)</p>
-            <p class="links__title">Есть опыт работы с App metrika и Firebase</p>
-          </li>
-        </ul>
+      <!-- Вкладка "Ключевые навыки" -->
+      <section class="skills">
+        <h2 class="skills__header">Ключевые навыки:</h2>
+        <div class="skills__container">
+          <!-- 1 строка -->
+          <div class="skills__row">
+            <div class="skills__column1">
+              <p class="skills__title">Процессы</p>
+            </div>
+            <div class="skills__column">
+              <p>Тасктрекеры: Яндекс.Трекер, Jira, Битрикс24</p>
+              <p>TMS: Чек-листы и тест-кейсы составляю в Testit</p>
+            </div>
+          </div>
+          <!-- 2 строка -->
+          <div class="skills__row">
+            <div class="skills__column1">
+              <p class="skills__title">Web</p>
+            </div>
+            <div class="skills__column">
+              <p>Умею работать с Devtools</p>
+              <p>Дизайн сверяю в Figma</p>
+              <p>Проводил Кросс-браузерное тестирование</p>
+            </div>
+          </div>
+          <!-- 3 строка -->
+          <div class="skills__row">
+            <div class="skills__column1">
+              <p class="skills__title">Бэкенд</p>
+            </div>
+            <div class="skills__column">
+              <p>Postman (коллекции, переменные, cUrl)</p>
+              <p>СSQL (Select, Join, Group by)</p>
+              <p>HTTP и клиент-серверная архитектура</p>
+              <p>Kibana, Sentry, Grafana</p>
+              <p>Опыт работы с Linux</p>
+              <p>Работаю с Git через консоль и десктопное приложение</p>
+              <p>Брокер сообщений Kafka</p>
+              <p>Swagger и Redoc</p>
+            </div>
+          </div>
+          <!-- 4 строка -->
+          <div class="skills__row">
+            <div class="skills__column1">
+              <p class="skills__title">Мобилки</p>
+            </div>
+            <div class="skills__column">
+              <p>Работал с Charles (breakpoint, map local, rewrite)</p>
+              <p>Запускал .apk на тестовом устройстве и в Android Studio (Adb и logcat)</p>
+              <p>Есть опыт работы с App metrika и Firebase</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
-      <button type = "button" class="button-link" href=""> Кредо </button>
+      <button type="button" class="button-link">Кредо</button>
     </footer>
     <script type="text/javascript" src="js.js"></script>
   </body>
