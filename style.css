@@ -6,20 +6,20 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
+/* Стили шапки */
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 40px 0;
-  text-align: center; /* Чтобы текст под изображением тоже был по центру */
+  text-align: center; /* Центрирование текста */
 }
 
 .header__avatar {
   border-radius: 30%;
   height: 500px;
+  display: block;
+  margin: 0 auto; /* Центрирование изображения */
 }
 
 .header__title {
@@ -33,13 +33,19 @@ body {
   color: #8f8f8f;
   font-size: 16px;
   line-height: 1.4;
-  margin: 0;
+  margin: 0 0 10px;
   font-family: "COMIC SANS MS";
 }
 
+/* Стили секции "Доступен" */
 .links {
   width: 340px;
+  margin: 0 auto 30px;
   margin-bottom: 30px;
+  background: #ffffff; /* Белый фон */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
 }
 
 .links__header {
@@ -47,51 +53,96 @@ body {
   font-size: 20px;
   line-height: 1.4;
   margin: 0 0 15px 0;
+  text-align: center; /* Центрирование заголовка */
 }
 
 .links__container {
+  list-style-type: none;
   display: flex;
-  flex-direction: column; /* Переключение на вертикальный стэк */
-  gap: 20px; /* Промежутки между секциями */
-  list-style: none; /* Убираем стандартные стили списка */
+  flex-direction: column;
+  align-items: center;
   padding: 0;
+  gap: 10px;
   margin: 0;
 }
 
-.links__link,
-.links__title {
-  font-size: 14px;
-  font-size: 1.4;
-}
-
 .links__link {
-  display: block;
+  display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px 0px 10px;
+  align-items: center;
+  padding: 0 0 10px;
   gap: 10px;
   border-bottom: 1px solid #dadada;
-  width: 300px;
+  width: 100%;
 }
 
 .links__link:last-child {
   border-bottom: none;
 }
 
-.linsk__link,
-.links__link:visited {
+.links__link-text,
+.links__link-text:visited {
   text-decoration: none;
   color: #cb782f;
 }
 
 .links__title {
-  margin: 5px 0;
+  margin: 0;
   min-width: 100px;
 }
 
+/* Стили секции "Ключевые навыки" */
+.skills {
+  width: 600px;
+  margin-bottom: 30px;
+  background: #ffffff; /* Белый фон */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.skills__header {
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+  text-align: center; /* Центрирование заголовка */
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.skills__column {
+  flex: 1;
+  word-wrap: break-word; /* Перенос текста для длинных строк */
+  padding: 0 10px;
+}
+
+.skills__column1 {
+  width: 18%;
+}
+
+.skills__title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Стили кнопки в футере */
 footer {
   margin: 0 0 40px 0;
+  text-align: center; /* Центрирование футера */
 }
+
 .button-link {
   box-sizing: border-box;
   display: flex;
@@ -102,10 +153,8 @@ footer {
   width: 320px;
   background: #cb782f;
   border-radius: 20px;
-
   font-size: 14px;
   line-height: 1.4;
-
   color: #ffffff;
   text-decoration: none;
 }
